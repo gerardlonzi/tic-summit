@@ -20,7 +20,7 @@ export default function Get() {
               </div>
               <div className='sec'>
                 <img src={icon} alt="" />
-                <p>3 Days deep dive training into product <br/> development at high tech centers</p>
+                <p>3 Days deep dive training into product  development at high tech centers</p>
               </div>
             </div>    
         </div>
@@ -31,7 +31,7 @@ export default function Get() {
               </div>
               <div className='sec'>
                 <img src={aro} alt="" />
-                <p>Opportunity advance your projects in our Startup <br /> Accelerator Programs</p>
+                <p>Opportunity advance your projects in our Startup  Accelerator Programs</p>
               </div>
         </div>
       </div>

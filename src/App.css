@@ -1,7 +1,10 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Proxima Nova Condensed", sans-serif;
+
   /* overflow-x: hidden !important; */
 }
 
@@ -198,6 +201,9 @@ hr {
 .bloc2 {
   margin-right: 50px;
 }
+.bloc2 svg {
+  width: 25px;
+}
 .bloc {
   display: flex;
   flex-direction: column;
@@ -205,7 +211,7 @@ hr {
   width: 1440px;
 }
 .bloc img {
-  width: 275px;
+  width: 419px;
   flex-shrink: 0;
 }
 .sec {
@@ -213,17 +219,19 @@ hr {
   background: #fff;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 38px;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
+  width: 370px;
 }
 
 .gets {
+  margin-top: 80px;
   display: flex;
   gap: 70px;
   padding: 0px 102px 0px 96.34px;
-
+  width: 80%;
   background-image: url("conponents/blocks-pages/Vector.png");
 
   background-repeat: no-repeat;
@@ -257,18 +265,19 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 200px;
-  margin-left: 250px;
+  margin-left: 100px;
 }
 .elem2 .sec:first-child {
   position: relative;
+  left: 270px;
 
-  top: 100px;
+  top: 50px;
 }
 .stat {
   display: flex;
   gap: 90px;
   height: 484px;
-  padding: 77px 101px 77px 70px;
+  padding: 77px 101px 77px 93px;
   background: linear-gradient(82.5deg, #010823 12.53%, #041a6f 101.69%);
 }
 .ours {
@@ -293,8 +302,8 @@ hr {
   color: #88f0e5;
 }
 .Allsqrt {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   top: 77px;
   gap: 30px;
 }
@@ -390,7 +399,7 @@ hr {
     2.994981527328491px;
 }
 .elig {
-  margin: 80px;
+  padding: 100px 101px 77px 93px;
   color: #041a6f;
 }
 .elig p {
@@ -413,6 +422,9 @@ hr {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+.circlewrit {
+  width: 50%;
 }
 .Allcircle {
   display: flex;
@@ -459,11 +471,14 @@ hr {
   color: #041a6f;
 }
 .car {
-  width: 450px;
+  width: 375px;
   height: 290px;
 
   border-radius: 15px;
   background: var(--gradient, linear-gradient(71deg, #010823 0%, #041a6f 100%));
+}
+.car:last-child {
+  display: none;
 }
 .tes,
 .star,
@@ -564,9 +579,15 @@ hr {
 .aros {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+}
+.TOopen {
+  margin-bottom: 5px;
+  z-index: 20;
+  font-size: 19px;
 }
 .tiret {
+  padding-top: 25px;
   padding-bottom: 10px;
   display: flex;
   align-items: center;
@@ -582,7 +603,7 @@ hr {
   margin-top: 200px;
 }
 .drop {
-  margin: 50px;
+  padding: 100px 101px 77px 93px;
   align-content: center;
   justify-content: center;
 }
@@ -651,11 +672,11 @@ textarea {
 .foot {
   display: flex;
   gap: 70px;
-  margin: 50px;
+  padding: 77px 101px 77px 110px;
   flex-wrap: wrap;
 }
 .fo {
-  height: 450px;
+  height: 530px;
   background: linear-gradient(82.5deg, #010823 12.53%, #041a6f 101.69%);
   padding-top: 15px;
   margin-top: 150px;
@@ -707,7 +728,10 @@ textarea {
 .pp span {
   color: #88f0e5;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 1005px) {
+  html {
+    width: 100%;
+  }
   .fo,
   .comp,
   .about,
@@ -724,11 +748,14 @@ textarea {
   .tes,
   .txtim,
   .espace {
-    width: 890px;
+    width: 100%;
   }
 
   .fo {
     height: 600px;
+  }
+  .sec {
+    width: 293;
   }
 
   nav ul {
@@ -819,6 +846,9 @@ textarea {
   .espace {
     background: white;
   }
+  .nav-scroll {
+    width: 30%;
+  }
   .es,
   .aq {
     color: #000;
@@ -874,6 +904,7 @@ textarea {
   .space {
     gap: 40px;
     margin: -17px -351px 92px 76px;
+    width: 1000px;
   }
   .Allcircle h2 {
     margin-bottom: 17px;
