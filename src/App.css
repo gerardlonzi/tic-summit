@@ -7,6 +7,12 @@
 
   /* overflow-x: hidden !important; */
 }
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
 
 .all {
   height: 640px;
@@ -28,6 +34,7 @@ nav {
   padding: 0px 102px 0px 96.34px;
   text-align: center;
   transition: 0.4s ease;
+  width: 100%;
 }
 
 .nav-scroll {
@@ -272,9 +279,8 @@ hr {
   margin-top: 80px;
   display: flex;
   gap: 70px;
-  background-color: red;
   padding: 0px 102px 0px 96.34px;
-  width: 80%;
+  width: 100%;
   background-image: url("conponents/blocks-pages/Vector.png");
 
   background-repeat: no-repeat;
@@ -317,15 +323,16 @@ hr {
 
 .elem2 .sec:first-child {
   position: relative;
-  margin-left: auto;
+  margin-left: 100px;
 
   top: 50px;
 }
 
 .stat {
+  width: 100%;
   display: flex;
   gap: 90px;
-  height: 484px;
+  height:auto fit-content;
   padding: 77px 101px 77px 93px;
   background: linear-gradient(82.5deg, #010823 12.53%, #041a6f 101.69%);
 }
@@ -341,7 +348,6 @@ hr {
 }
 
 .txtes p {
-  height: 256px;
   font-size: 64px;
   font-weight: 600;
   line-height: 64px;
@@ -362,8 +368,7 @@ hr {
 }
 
 .sqrt {
-  width: 350px;
-  height: 150px;
+  padding:70px 150px;
   border-radius: 10px;
   background: #fcfcfc4d;
 }
@@ -497,7 +502,7 @@ hr {
 }
 
 .circlewrit {
-  width: 50%;
+  width: 100%;
 }
 
 .Allcircle {
@@ -640,10 +645,11 @@ hr {
 }
 
 .btn {
-  position: relative;
-  left: 394px;
+  width: 25%;
+  display: flex;
   justify-content: center;
-  padding: 20px 120px;
+  margin: auto;
+  padding: 15px 30px;
   border-radius: 5px;
   background-color: #88f0e5;
   font-size: 24px;
@@ -775,7 +781,7 @@ textarea {
   line-height: 32px;
   letter-spacing: 0em;
   color: #88f0e5;
-  margin-left: 447px;
+  margin-left: auto;
 }
 
 .foot {
@@ -786,10 +792,11 @@ textarea {
 }
 
 .fo {
-  height: 530px;
   background: linear-gradient(82.5deg, #010823 12.53%, #041a6f 101.69%);
   padding-top: 15px;
   margin-top: 150px;
+  height: auto fit-content;
+  padding-bottom: 60px;
 }
 
 .foot h2 {
@@ -850,288 +857,131 @@ textarea {
 
 @media screen and (max-width:550px) {
 
-  .txts {
-    background-color: red;
-
-  }
-
-  .txt span {
-
-    background-color: red;
-    font-size: 80px;
-  }
+ 
 
 }
 
-@media screen and (max-width:800px) {
-  .txt div svg {
-    width: 300px;
-
-  }
-
-}
-
-
-/*
-@media screen and (max-width: 1005px) {
-
-  html {
+@media screen and (max-width:890px) {
+  #root{
     width: 100%;
   }
-
-  .fo,
-  .comp,
-  .about,
-  .all,
-  .con,
-  .get,
-  .ours,
-  .stat,
-  .event,
-  .slides,
-  .insig,
-  .answer,
-  .imgStar,
-  .tes,
-  .txtim,
-  .espace {
-    width: 100%;
+  .gets {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0px;
+      background-image: none;
+      margin-left: 60px;
   }
-
-  .fo {
-    height: 600px;
+  .elem1 .ment{
+    gap: 20px;
   }
-
-  .sec {
-    width: 293;
+  .elem2{
+    gap: 200px;
   }
-
-  nav ul {
+  .elem2 .sec:first-child {
+    margin: auto;
+  }
+  .sec{
+    margin: auto;
+  }
+  nav ul{
     display: none;
   }
-
   .hamburger {
     display: block;
-  }
+}
+.carre,.imgStar,.answer {
+  display: flex;
+ flex-direction: column;
+}
 
-  .hamburger img {
-    color: black;
-    width: 50px;
-  }
+.answer {
+ gap: 50px;
+}
+.bloc img {
+  width: 300px;
+}
+.contact, .input {
+   width: 100%; 
+  height: 100%; 
+}
+textarea {
+  width: 100%;
+  height: 170px;
+ 
+}
+}
 
-  .apply button {
-    width: 220px;
-    height: 45px;
-    padding: 7.111px;
+@media screen and (max-width:1006px) {
+  nav p svg{
+    width: 90px;
   }
-
-  nav p {
-    width: 81.947px;
-    height: 51.408px;
+  nav ul {
+   
+    gap: 35px;
+   
   }
-
-  nav span {
-    color: #88f0e5;
-    font-family: Proxima Nova;
-    font-size: 13.929px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 110.5%;
-  }
-
-  .txt {
-    display: flex;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .txt span {
-    color: #fff;
-    font-family: Proxima Nova;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .txts {
-    color: #fff;
-    text-align: center;
-    font-family: Proxima Nova;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  .comp img {
-    width: 665px;
-    height: 92px;
-  }
-
   .blocks {
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    gap: 50px;
+    gap: 145.25px;
+    flex-direction: column;  
   }
-
-  .bloc2 button {
-    left: 96%;
+  .sec {
+   
+    padding: 20px 28px;
+    width: 300px;
   }
 
   .stat {
-    height: 550px;
-    gap: 0px;
+    width: 100%;
     flex-direction: column;
-    padding: 30px 101px 77px 70px;
-  }
+  
+}
+.bloctxt {
+  display: flex;
+  flex-direction: column;
+}
+.txt span{
+  font-size: 70px;
+}
+.txt svg {
+  width: 100.04px;
+  height: 64.124px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.apply button {
+ 
+  padding: 15px 70px;
+  font-size: 24px;
+ 
+}
+.car {
+  width: 90%; 
+  height: 290px;
+  border-radius: 15px;
+  background: var(--gradient, linear-gradient(71deg, #010823 0%, #041a6f 100%));
+}
 
-  .txtes p {
-    font-size: 45px;
-    height: 193px;
-  }
 
-  .Allsqrt {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sqrt {
-    height: 132px;
-  }
-
-  .imgStar {
-    margin: 0;
-    flex-direction: column;
-    gap: 80px;
-    color: white;
-    background: var(--gradient,
-        linear-gradient(71deg, #010823 0%, #041a6f 100%));
-    padding: 60px;
-  }
-
-  .espace {
-    background: white;
-  }
-
-  .nav-scroll {
-    width: 30%;
-  }
-
-  .es,
-  .aq {
-    color: #000;
-  }
-
-  .btn {
-    border-radius: 5px;
-    background: var(--gradient, #010823);
-    color: #fff;
-    padding: 20px 65px;
-    left: 320px;
-  }
-
-  .elem1 span {
-    font-size: 55px;
-  }
-
-  .elem2 {
-    margin-left: 20px;
-  }
-
-  .sec {
-    width: 300px;
-  }
-
-  .insig {
-    margin: 100px -27px 0px 100px;
-  }
-
-  .bloctxt {
-    gap: 15px;
-    margin: 50px 100px 0px 100px;
-  }
-
-  .alltxt {
-    display: flex;
-    gap: 4.925926208496094px;
-  }
-
-  .txtwrit h2 {
-    margin-bottom: 8px;
-    font-size: 30px;
-  }
-
-  .txtwrit p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: initial;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 173px;
-  }
-
-  .elig {
-    margin-top: 211px;
-    margin-left: 100px;
-    color: #041a6f;
-  }
-
-  .elig p {
-    display: flex;
-    gap: 10px;
-  }
+.carre {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-right: 0px;
+  gap: 10px;
+ 
+}
+.car:last-child {
+  display: block;
+}
+}
+@media screen and (max-width:1160px) {
 
   .space {
-    gap: 40px;
-    margin: -17px -351px 92px 76px;
-    width: 1000px;
+    margin: 40px 150px 10px 110px;
+
   }
 
-  .Allcircle h2 {
-    margin-bottom: 17px;
-    font-size: 30px;
-  }
-
-  .car {
-    width: 177px;
-    height: 282px;
-  }
-
-  .txtim h1 {
-    font-size: 44px;
-  }
-
-  .txtim {
-    margin: 108px 0px 70px 50px;
-  }
-
-  .espace {
-    margin-top: 100px;
-    padding: 0;
-  }
-
-  .aq {
-    margin-bottom: 40px;
-    font-size: 16px;
-  }
-
-  .es {
-    font-size: 25px;
-  }
-
-  .answer {
-    flex-direction: column;
-    gap: 90px;
-    margin: 97px -213px -114px -105px;
-  }
-
-  .answ {
-    font-size: 45px;
-    position: relative;
-    left: -74px;
-  }
 }
-*/
+
+
