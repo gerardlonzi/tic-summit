@@ -527,7 +527,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin: 40px 350px 70px 210px;
+    margin: 40px 70px 10px 100px;
   background-image: url("conponents/blocks-pages/Line.png");
   background-repeat: no-repeat;
 }
@@ -588,6 +588,8 @@ hr {
   margin-right: 50px;
   margin-top: 45px;
   gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .imgStar {
@@ -853,31 +855,128 @@ textarea {
   color: #88f0e5;
 }
 
+@media screen and (max-width:395px) {
+  .bloc img {
+    width: 150px;
+}
+.sec {
+  padding: 0;
+  width: 100%;
+}
+.sqrt {
+  padding: 70px 130px;
+}
+}
 
-
-@media screen and (max-width:550px) {
-
- 
+@media screen and (max-width:600px) {
+  .txts{
+    margin: 30px auto;
+  }
+  .drop {
+    padding: 100px 101px 77px 50px;
+}
+  .answer {
+    margin: 50px 120px 70px 50px;
+  
+}
+  .Allcircle:first-child {
+    margin-left: 0px;
+}
+.Allcircle:last-child {
+  margin-left: 0px;
+}
+  .space {
+    margin: 40px 70px 10px 50px;
+}
+  .stat {
+    padding: 77px 101px 77px 50px;
+}
+  nav {
+    padding: 0px 35px 0px 45.34px;
+}
+.nav-scroll {
+  padding: 0px 35px 0px 45.34px;
+}
+  
+.txt div{
+ display: flex;
+ flex-direction: column;
+}
+  .bloc img {
+    width: 100%;
+    max-width: 2300px;
+}
+.bloctxt {
+  gap: 100px;
+}
+.alltxt{
+  margin-bottom: 30px;
+  height: auto ;
+  width: 100%;
+}
+.bloctxt {
+    display: flex;
+    margin: 100px 50px 0px 50px;
+}
+.answ {
+  font-size: 54px;
+  
+}
+.btn {
+  width: auto;
+  padding: 10px 20px;
+    font-size: 20px;
+}
+.txtim h1 {
+  font-size: 44px;
+  
+}
+.txt span{
+  font-size: 40px;
+}
+.txt svg {
+  width: 70.04px;
+  height: 64.124px;
+}
+.all {
+  height: auto;
+  padding-bottom: 50px;
+}
+.apply button {
+  
+  padding: 20px 70px;
+  
+}
+.blocks {
+  padding-left: 50px;
+  padding-right: 96.62px;
+}
+.gets {
+  padding: 0px 102px 0px 50px;
+}
+.txtim {
+  margin: 120px 0px 70px 30px;
+}
+.imgStar {
+  margin: 50px 120px 70px 50px;
+}
 
 }
 
-@media screen and (max-width:890px) {
-  #root{
-    width: 100%;
-  }
+@media screen and (max-width:906px) {
   .gets {
       display: flex;
       justify-content: center;
       flex-direction: column;
       gap: 0px;
       background-image: none;
-      margin-left: 60px;
+      margin-left: 0;
   }
   .elem1 .ment{
     gap: 20px;
   }
   .elem2{
-    gap: 200px;
+    gap: 100px;
   }
   .elem2 .sec:first-child {
     margin: auto;
@@ -899,9 +998,6 @@ textarea {
 .answer {
  gap: 50px;
 }
-.bloc img {
-  width: 300px;
-}
 .contact, .input {
    width: 100%; 
   height: 100%; 
@@ -911,11 +1007,24 @@ textarea {
   height: 170px;
  
 }
+.all{
+  width: 100%;
+}
+.space{
+  background-image: none;
+}
+.Allsqrt{
+ display: flex;
+ flex-wrap: wrap;
+}
+.sqrt{
+  width: 100%;
+}
 }
 
 @media screen and (max-width:1006px) {
   nav p svg{
-    width: 90px;
+    width: 80px;
   }
   nav ul {
    
@@ -929,7 +1038,6 @@ textarea {
   .sec {
    
     padding: 20px 28px;
-    width: 300px;
   }
 
   .stat {
@@ -941,15 +1049,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.txt span{
-  font-size: 70px;
-}
-.txt svg {
-  width: 100.04px;
-  height: 64.124px;
-  flex-shrink: 0;
-  margin-right: 30px;
-}
+
 .apply button {
  
   padding: 15px 70px;
@@ -957,30 +1057,31 @@ textarea {
  
 }
 .car {
-  width: 90%; 
+  width: 100%; 
   height: 290px;
   border-radius: 15px;
   background: var(--gradient, linear-gradient(71deg, #010823 0%, #041a6f 100%));
 }
 
 
-.carre {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  margin-right: 0px;
-  gap: 10px;
  
-}
+
 .car:last-child {
   display: block;
+}
+.txt span{
+  font-size: 60px;
+}
+.txt svg {
+  width: 90.04px;
+  height: 54.124px;
+}
+.txt{
+  margin-left: auto;
 }
 }
 @media screen and (max-width:1160px) {
 
-  .space {
-    margin: 40px 150px 10px 110px;
-
-  }
 
 }
 
